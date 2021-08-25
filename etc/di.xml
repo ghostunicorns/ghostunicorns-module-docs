@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright © Ghost Unicorns snc. All rights reserved.
+  ~ See LICENSE for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- start logger-->
+
+    <virtualType name="GhostUnicorns\Docs\Log\Handler" type="Magento\Framework\Logger\Handler\Base">
+        <arguments>
+            <argument name="fileName" xsi:type="string">/var/log/docs_archive_manager.log</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="GhostUnicorns\Docs\Log\ArchiveManager" type="Monolog\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">GhostUnicorns::Docs</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">GhostUnicorns\Docs\Log\Handler</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="GhostUnicorns\Docs\Model\ArchiveManager">
+        <arguments>
+            <argument name="logger" xsi:type="object">GhostUnicorns\Docs\Log\ArchiveManager</argument>
+        </arguments>
+    </type>
+
+    <!-- end logger-->
+
+    <!-- Preference start -->
+    <preference for="GhostUnicorns\Docs\Api\ConfigInterface"
+                type="GhostUnicorns\Docs\Model\Config"/>
+    <!-- Preference end -->
+</config>
