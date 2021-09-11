@@ -7,10 +7,10 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="docs" translate="label" sortOrder="100">
+        <tab id="docs" translate="label">
             <label>Documents</label>
         </tab>
-        <section id="docs" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+        <section id="docs" translate="label" showInDefault="1" showInWebsite="0" showInStore="0">
             <class>separator-top</class>
             <label>Configuration</label>
             <tab>docs</tab>

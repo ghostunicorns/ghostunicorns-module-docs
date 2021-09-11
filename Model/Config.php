@@ -47,8 +47,8 @@ class Config implements ConfigInterface
     /**
      * @inheirtDoc
      */
-    public function getAllowedExtension(): string
+    public function getAllowedExtension(): array
     {
-        return '';
+        return [];
     }
 }

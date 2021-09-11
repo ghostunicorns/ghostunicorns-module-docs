@@ -16,7 +16,7 @@ interface ConfigInterface
     public function isEnabled(): bool;
 
     /**
-     * @return string
+     * @return string[]
      */
-    public function getAllowedExtension(): string;
+    public function getAllowedExtension(): array;
 }
