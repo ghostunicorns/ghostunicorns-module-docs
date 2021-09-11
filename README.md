@@ -13,7 +13,7 @@ Docs is base module, it contains the main function to archive docs; watch docs-o
 
 2. Go to `Stores > Configuration > Documents > Configuration` and enable it
 
-<img src="https://github.com/ghostunicorns/module-docs/blob/main/screenshots/ghostunicorns-docs-be-config1.png" />
+<img src="https://github.com/ghostunicorns/ghostunicorns-module-docs/blob/main/screenshots/ghostunicorns-docs-be-config1.png" />
 
 # Use
 
