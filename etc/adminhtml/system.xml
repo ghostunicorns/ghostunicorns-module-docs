@@ -7,7 +7,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="docs" translate="label">
+        <tab id="docs" translate="label" sortOrder="101">
             <label>Documents</label>
         </tab>
         <section id="docs" translate="label" showInDefault="1" showInWebsite="0" showInStore="0">
@@ -15,10 +15,10 @@
             <label>Configuration</label>
             <tab>docs</tab>
             <resource>GhostUnicorns_Docs::configuration</resource>
-            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+            <group id="general" translate="label" type="text" showInDefault="1" showInWebsite="0"
                    showInStore="0">
                 <label>General</label>
-                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0"
+                <field id="enabled" translate="label" type="select" showInDefault="1" showInWebsite="0"
                        showInStore="0">
                     <label>Enable Docs</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
