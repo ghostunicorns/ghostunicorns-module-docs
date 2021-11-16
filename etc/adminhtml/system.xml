@@ -7,15 +7,15 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="docs" translate="label" sortOrder="101">
+        <tab id="docs" translate="label" sortOrder="200">
             <label>Documents</label>
         </tab>
-        <section id="docs" translate="label" showInDefault="1" showInWebsite="0" showInStore="0">
+        <section id="docs" translate="label" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="1">
             <class>separator-top</class>
             <label>Configuration</label>
             <tab>docs</tab>
             <resource>GhostUnicorns_Docs::configuration</resource>
-            <group id="general" translate="label" type="text" showInDefault="1" showInWebsite="0"
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0"
                    showInStore="0">
                 <label>General</label>
                 <field id="enabled" translate="label" type="select" showInDefault="1" showInWebsite="0"
